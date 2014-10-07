@@ -5,7 +5,7 @@ body {
 .presents {
   position: absolute;
   font-family: 'Bangers', cursive;
-  font-size: 90px;
+  font-size: 72px;
   margin-left: 370px;
   display: none;
   top: 290px;
@@ -17,8 +17,8 @@ body {
   position: absolute;
   width: 500px;
   height: 172px;
-  top: 200px;
-  margin-left: 270px;
+  top: 220px;
+  margin-left: 370px;
 }
 
 .sf-logo {
@@ -26,8 +26,8 @@ body {
   position: absolute;
   width: 682px;
   height: 314px;
-  margin-left: 200px;
-  top: 170px;
+  margin-left: 320px;
+  top: 250px;
   z-index: 11;
   display:none;
 }
@@ -55,10 +55,6 @@ body {
 	height: 500px;
 }
 
-ul li {
-  padding-left: 14px; 
-}
-
 .ryu {
   float: left;
   z-index: 3;
@@ -71,7 +67,7 @@ ul li {
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool .ryu-still {
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-still {
   display: none;
 } 
 
@@ -97,12 +93,10 @@ ul li {
 
 .dojo {
  background-image: url('../images/dojo.png');
- margin-left: -100px;
  width: 1500px;
  height: 500px;
  z-index: 1;
  display: none;
- top: -500px;
 }
 
 .hadouken {
