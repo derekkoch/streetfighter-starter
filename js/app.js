@@ -29,9 +29,18 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	});
 
-	$('ryu').keydown(function() {
-
+	$(document).on('keydown', function(event) {
+		if(event.keyCode == 88) {
+			$('.ryu-ready').hide();
+			$('.ryu-cool').show();
+		}
 	});
+
+	$(document).on('keyup', function(event) {
+			$('.ryu-cool').hide();
+			$('.ryu-ready').show();
+	});
+
 
 });
 
