@@ -87,7 +87,7 @@ body {
   background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .sf-logo, .jquery-logo {
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .sf-logo, .jquery-logo, .dojo {
   background-repeat: no-repeat;
 }
 
@@ -95,7 +95,6 @@ body {
  background-image: url('../images/dojo.png');
  width: 1500px;
  height: 500px;
- z-index: 1;
  display: none;
 }
 

@@ -37,13 +37,14 @@ $(document).ready(function() {
 		if(event.keyCode == 88) {
 			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
-			$('.dojo').fadeIn(700);
+			$('.dojo').show();
 		}
 	});
 
 	$(document).on('keyup', function(event) {
 			$('.ryu-cool').hide();
 			$('.ryu-ready').show();
+			$('dojo').hide();
 	});
 
 });
