@@ -52,8 +52,8 @@ ul li {
   height: auto;
   width: auto;
   background-image: url('../images/hadouken.gif');
-  float: right;
+  float: left;
   position: relative;
   top: 100px;
-  left: 600px;
+  left: -212px;
 }

@@ -14,7 +14,15 @@ $(document).ready(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-still').hide();
 		$('.ryu-throwing').show();
-		$('.hadouken').show();
+		$('.hadouken').finish().show()
+			.animate(
+				{'left': '300px'},
+				500,
+				function() {
+					$(this).hide();
+					$(this).css('left', '-212px')
+				}
+			);
 	});
 
 	$('.ryu').mouseup(function() {
