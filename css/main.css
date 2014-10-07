@@ -6,7 +6,7 @@ body {
   position: absolute;
   font-family: 'Bangers', cursive;
   font-size: 72px;
-  margin-left: 370px;
+  margin-left: 400px;
   display: none;
   top: 290px;
 }
@@ -15,18 +15,18 @@ body {
   background-image: url('../images/jQuery.png');
   display: none;
   position: absolute;
-  width: 500px;
-  height: 172px;
+  width: 120%;
+  height: 120%;
   top: 220px;
-  margin-left: 370px;
+  margin-left: 400px;
 }
 
 .sf-logo {
   background-image: url('../images/streetFighter.png');
   position: absolute;
-  width: 682px;
-  height: 314px;
-  margin-left: 320px;
+  width: 150%;
+  height: 150%;
+  margin-left: 400px;
   top: 250px;
   z-index: 11;
   display:none;
@@ -50,7 +50,6 @@ body {
 .main {
 	background-color: white;
 	margin-top: 110px;
-	padding-left: 100px;
 	min-width: 1200px;
 	height: 500px;
 }
@@ -58,6 +57,7 @@ body {
 .ryu {
   float: left;
   z-index: 3;
+  padding-left: 100px;
   height: 494px;
   width: 659px;
 }
@@ -93,8 +93,8 @@ body {
 
 .dojo {
  background-image: url('../images/dojo.png');
- width: 1500px;
- height: 500px;
+ height: 80%;
+ width: 80%;
  display: none;
 }
 

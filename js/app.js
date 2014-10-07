@@ -44,7 +44,7 @@ $(document).ready(function() {
 	$(document).on('keyup', function(event) {
 			$('.ryu-cool').hide();
 			$('.ryu-ready').show();
-			$('dojo').hide();
+			$('.dojo').hide();
 	});
 
 });
