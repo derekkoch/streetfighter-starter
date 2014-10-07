@@ -2,6 +2,51 @@ body {
 	 background: black;
 }
 
+.presents {
+  position: absolute;
+  font-family: 'Bangers', cursive;
+  font-size: 90px;
+  margin-left: 370px;
+  display: none;
+  top: 290px;
+}
+
+.jquery-logo {
+  background-image: url('../images/jQuery.png');
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 172px;
+  top: 200px;
+  margin-left: 270px;
+}
+
+.sf-logo {
+  background-image: url('../images/streetFighter.png');
+  position: absolute;
+  width: 682px;
+  height: 314px;
+  margin-left: 200px;
+  top: 170px;
+  z-index: 11;
+  display:none;
+}
+
+.instructions {
+  position: absolute;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  top: 160px;
+  margin-left: 585px;
+  display: none;
+}
+
+.instructions p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+
+}
 .main {
 	background-color: white;
 	margin-top: 110px;
@@ -10,13 +55,15 @@ body {
 	height: 500px;
 }
 
-.instructions {
-  float: right;
-  padding-right: 100px;
-}
-
 ul li {
   padding-left: 14px; 
+}
+
+.ryu {
+  float: left;
+  z-index: 3;
+  height: 494px;
+  width: 659px;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
@@ -24,7 +71,7 @@ ul li {
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool, .hadouken {
+.ryu-ready, .ryu-throwing, .ryu-cool .ryu-still {
   display: none;
 } 
 
@@ -44,16 +91,28 @@ ul li {
   background-image: url('../images/ryu-cool.gif');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .sf-logo, .jquery-logo {
   background-repeat: no-repeat;
 }
 
+.dojo {
+ background-image: url('../images/dojo.png');
+ margin-left: -100px;
+ width: 1500px;
+ height: 500px;
+ z-index: 1;
+ display: none;
+ top: -500px;
+}
+
 .hadouken {
-  height: auto;
-  width: auto;
   background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
   float: left;
   position: relative;
-  top: 100px;
+  top: 167px;
   left: -212px;
-}
+  z-index: 1;
+} 

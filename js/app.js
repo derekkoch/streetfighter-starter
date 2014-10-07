@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	intro();
+
 	$('.ryu').mouseenter(function() {
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -30,19 +33,19 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	});
 
-	$(document).on('keydown', function(event) {
+});
+
+$(document).on('keydown', function(event) {
 		if(event.keyCode == 88) {
 			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
+			$('.dojo').fadeIn(700);
 		}
-	});
+});
 
-	$(document).on('keyup', function(event) {
+$(document).on('keyup', function(event) {
 			$('.ryu-cool').hide();
 			$('.ryu-ready').show();
-	});
-
-
 });
 
 function playHadouken () {
@@ -51,3 +54,19 @@ function playHadouken () {
   $('#hadouken-sound')[0].play();
 }
 
+function intro() {
+  $('.jquery-logo').fadeIn(900, function() {
+    $(this).fadeOut(1700, function() {
+      $('.presents').fadeIn(900, function() {
+        $(this).fadeOut(1500, function() {
+          $('.sf-logo').fadeIn(900, function() {
+            $(this).fadeOut(1800, function() {
+              $('.ryu-still').fadeIn(800);
+              $('.instructions').fadeIn(800);
+            });
+          })
+        })
+      })
+    })
+  })
+}
