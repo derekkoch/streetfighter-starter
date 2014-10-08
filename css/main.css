@@ -6,7 +6,7 @@ body {
   position: absolute;
   font-family: 'Bangers', cursive;
   font-size: 72px;
-  margin-left: 400px;
+  margin-left: 420px;
   display: none;
   top: 290px;
 }
@@ -15,8 +15,8 @@ body {
   background-image: url('../images/jQuery.png');
   display: none;
   position: absolute;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   top: 220px;
   margin-left: 400px;
 }
@@ -24,8 +24,8 @@ body {
 .sf-logo {
   background-image: url('../images/streetFighter.png');
   position: absolute;
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
   margin-left: 400px;
   top: 250px;
   z-index: 11;
@@ -93,8 +93,8 @@ body {
 
 .dojo {
  background-image: url('../images/dojo.png');
- height: 80%;
- width: 80%;
+ height: 100%;
+ width: 100%;
  display: none;
 }
 
