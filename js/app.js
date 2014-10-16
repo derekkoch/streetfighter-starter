@@ -1,52 +1,56 @@
-$(document).ready(function() {
+var introComplete = 0;
 
+$(document).ready(function() {
 	intro();
 
-	$('.ryu').mouseenter(function() {
-		$('.ryu-still').hide();
-		$('.ryu-ready').show();
-	});
-
-	$('.ryu').mouseleave(function() {
-		$('.ryu-ready').hide();
-		$('.ryu-still').show();
-	});
-	
-	$('.ryu').mousedown(function() {
-		playHadouken();
-		$('.ryu-ready').hide();
-		$('.ryu-still').hide();
-		$('.ryu-throwing').show();
-		$('.hadouken').finish().show()
-			.animate(
-				{'left': '300px'},
-				500,
-				function() {
-					$(this).hide();
-					$(this).css('left', '-212px')
-				}
-			);
-	});
-
-	$('.ryu').mouseup(function() {
-		$('.ryu-throwing').hide();
-		$('.ryu-ready').show();
-	});
-
-	$(document).on('keydown', function(event) {
-		if(event.keyCode == 88) {
-			$('.ryu-ready').hide();
-			$('.ryu-cool').show();
-			$('.dojo').show();
-		}
-	});
-
-	$(document).on('keyup', function(event) {
-			$('.ryu-cool').hide();
+	if (introComplete == 1) {
+		$('.ryu').mouseenter(function() {
+			$('.ryu-still').hide();
 			$('.ryu-ready').show();
-			$('.dojo').hide();
-	});
+		});
 
+		$('.ryu').mouseleave(function() {
+			$('.ryu-ready').hide();
+			$('.ryu-still').show();
+		});
+	
+		$('.ryu').mousedown(function() {
+			playHadouken();
+			$('.ryu-ready').hide();
+			$('.ryu-still').hide();
+			$('.ryu-throwing').show();
+			$('.hadouken').finish().show()
+				.animate(
+					{'left': '300px'},
+					500,
+					function() {
+						$(this).hide();
+						$(this).css('left', '-212px')
+					}
+				);
+		});
+
+		$('.ryu').mouseup(function() {
+			$('.ryu-throwing').hide();
+			$('.ryu-ready').show();
+		});
+
+		$(document).on('keydown', function(event) {
+			if(event.keyCode == 88) {
+				$('.ryu-ready').hide();
+				$('.ryu-cool').show();
+				$('.dojo').show();
+			}
+		});
+
+		$(document).on('keyup', function(event) {
+				$('.ryu-cool').hide();
+				$('.ryu-ready').show();
+				$('.dojo').hide();
+		});	
+
+	}
+		
 });
 
 function playHadouken () {
@@ -70,4 +74,6 @@ function intro() {
       })
     })
   })
+  introComplete = 1;
+
 }
