@@ -79,9 +79,9 @@ function intro() {
                 $('.instructions').fadeIn(800, function() {
               		introComplete = 1;
               });
-            })
-          })
-        })
-      })
-    })
+            });
+          });
+        });
+      });
+    });
 }
