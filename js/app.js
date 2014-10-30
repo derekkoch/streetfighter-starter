@@ -77,7 +77,7 @@ function intro() {
           $('.sf-logo').fadeIn(900, function() {
             $(this).fadeOut(1800, function() {
                 $('.ryu-still').fadeIn(800);
-                $('.instructions').fadeIn(800), function() {
+                $('.instructions').fadeIn(800, function() {
               		introComplete = 1;
               });
             })
