@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	var introComplete = 0;
 	
 	intro();
@@ -84,4 +85,5 @@ function intro() {
         });
       });
     });
+});
 }
