@@ -79,10 +79,7 @@ function intro() {
                 $('.ryu-still').fadeIn(800);
                 $('.instructions').fadeIn(800, function() {
               		introComplete = 1;
-<<<<<<< HEAD
-=======
               		console.log("Intro Complete = " + introComplete);
->>>>>>> master
               	});
             });
           });
@@ -90,8 +87,5 @@ function intro() {
       });
     });
   });
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master
+
