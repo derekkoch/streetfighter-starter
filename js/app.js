@@ -1,3 +1,5 @@
+//This is a test commit to verify issue with gitHub.
+
 var introComplete = 0;
 
 $(document).ready(function() {
