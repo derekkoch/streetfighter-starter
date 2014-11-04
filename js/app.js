@@ -1,22 +1,25 @@
-//This is a test commit to verify issue with gitHub.
-
-var introComplete = 0;
-
 $(document).ready(function() {
+
+	var introComplete = 0;
+	
 	intro();
 
-	if (introComplete == 1) {
-		$('.ryu').mouseenter(function() {
+	$('.ryu').mouseenter(function() {
+		if (introComplete == 1) {
 			$('.ryu-still').hide();
 			$('.ryu-ready').show();
-		});
+		}
+	});
 
-		$('.ryu').mouseleave(function() {
+	$('.ryu').mouseleave(function() {
+		if (introComplete == 1) {
 			$('.ryu-ready').hide();
 			$('.ryu-still').show();
-		});
+		}
+	});
 	
-		$('.ryu').mousedown(function() {
+	$('.ryu').mousedown(function() {
+		if (introComplete == 1) {
 			playHadouken();
 			$('.ryu-ready').hide();
 			$('.ryu-still').hide();
@@ -27,32 +30,37 @@ $(document).ready(function() {
 					500,
 					function() {
 						$(this).hide();
-						$(this).css('left', '-212px')
+						$(this).css('left', '-212px');
 					}
 				);
+			}
 		});
 
-		$('.ryu').mouseup(function() {
+	$('.ryu').mouseup(function() {
+		if (introComplete == 1) {
 			$('.ryu-throwing').hide();
 			$('.ryu-ready').show();
-		});
+		}
+	});
 
-		$(document).on('keydown', function(event) {
+	$(document).on('keydown', function(event) {
+		if (introComplete == 1) {
 			if(event.keyCode == 88) {
 				$('.ryu-ready').hide();
 				$('.ryu-cool').show();
 				$('.dojo').show();
 			}
-		});
+		}
+	});
 
-		$(document).on('keyup', function(event) {
-				$('.ryu-cool').hide();
-				$('.ryu-ready').show();
-				$('.dojo').hide();
-		});	
+	$(document).on('keyup', function(event) {
+		if (introComplete == 1) {
+			$('.ryu-cool').hide();
+			$('.ryu-ready').show();
+			$('.dojo').hide();
+		}
+	});	
 
-	}
-		
 });
 
 function playHadouken () {
@@ -68,14 +76,15 @@ function intro() {
         $(this).fadeOut(1500, function() {
           $('.sf-logo').fadeIn(900, function() {
             $(this).fadeOut(1800, function() {
-              $('.ryu-still').fadeIn(800);
-              $('.instructions').fadeIn(800);
+                $('.ryu-still').fadeIn(800);
+                $('.instructions').fadeIn(800, function() {
+              		introComplete = 1;
+              		console.log("Intro Complete = " + introComplete);
+              	});
             });
-          })
-        })
-      })
-    })
-  })
-  introComplete = 1;
-
+          });
+        });
+      });
+    });
+  });
 }
