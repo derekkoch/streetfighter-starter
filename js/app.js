@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	introComplete = 0;
+	var introComplete = 0;
 	
 	intro();
 
 	$('.ryu').mouseenter(function() {
-		console.log("Mouse enter = " + introComplete);
+		//console.log("Mouse enter = " + introComplete);
 		if (introComplete == 1) {
 			$('.ryu-still').hide();
 			$('.ryu-ready').show();
@@ -80,7 +80,7 @@ function intro() {
                 $('.ryu-still').fadeIn(800);
                 $('.instructions').fadeIn(800, function() {
               		introComplete = 1;
-              		console.log("Intro Complete = " + introComplete);
+              		//console.log("Intro Complete = " + introComplete);
               	});
             });
           });
