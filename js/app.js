@@ -78,7 +78,7 @@ function intro() {
             $(this).fadeOut(1800, function() {
                 $('.ryu-still').fadeIn(800);
                 $('.instructions').fadeIn(800, function() {
-              		introComplete = 1;
+              		var introComplete = 1;
               		console.log("Intro Complete = " + introComplete);
               	});
             });
