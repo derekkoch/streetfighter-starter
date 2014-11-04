@@ -5,6 +5,7 @@ $(document).ready(function() {
 	intro();
 
 	$('.ryu').mouseenter(function() {
+		console.log("Mouse Enter Loaded = " + introComplete);
 		if (introComplete == 1) {
 			$('.ryu-still').hide();
 			$('.ryu-ready').show();
