@@ -44,7 +44,6 @@ function intro() {
 							$(this).css('left', '-212px');
 						}
 					);
-				}
 			});
 
 			$('.ryu').mouseup(function() {
