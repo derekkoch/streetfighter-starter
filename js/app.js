@@ -2,7 +2,6 @@ $(document).ready(function() {
 	
 	intro();
 
-<<<<<<< HEAD
 	$('.ryu').mouseenter(function() {
 		console.log("Mouse Enter Loaded = " + introComplete);
 		if (introComplete == 1) {
@@ -61,8 +60,6 @@ $(document).ready(function() {
 		}
 	});	
 
-=======
->>>>>>> master
 });
 
 function playHadouken () {
